@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9af9e733-b7b8-43f1-9a7d-794eb25647dc" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/BACK-END/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/.idea/projet en cours.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/AjouterRayon.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/js/java-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/style/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Assets/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/BD config/BD_config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Entites/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-END/Entites/Produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Entites/Rayon.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-END/Entites/Rayon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Entites/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/BACK-END/Entites/Utilisateur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Repositoire/ProduitRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/Repositoire/RayonRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/SupprimerRayon.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACK-END/modifierRayon.php" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="58" column="7" lean-forward="true" selection-start-line="8" selection-end-line="58" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RayonRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Repositoire/RayonRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="produitByRayon.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produitByRayon.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="111" column="52" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yourCart.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yourCart.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connexion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connexion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProduitRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Repositoire/ProduitRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1100">
+              <caret line="61" column="57" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategorieRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Repositoire/CategorieRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="925">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#1032#1042#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>formaddrayon</find>
+      <find>utilisateur</find>
+      <find>$user</find>
+      <find>$UtilisateurRepository</find>
+      <find>categorie</find>
+      <find>id_categorie</find>
+      <find>$rayon</find>
+      <find>rayonrep</find>
+      <find>RayonRepository</find>
+      <find>$rayonrep</find>
+      <find>$cat</find>
+      <find>CategorieRepository</find>
+      <find>&lt;p</find>
+      <find>&lt;/p</find>
+      <find>navba</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>formadduser</replace>
+      <replace>Utilisateur</replace>
+      <replace>Categorie</replace>
+      <replace>$CategorieRepository</replace>
+      <replace>id_Categorie</replace>
+      <replace>$cat</replace>
+      <replace>produitrep</replace>
+      <replace>ProduitRepository</replace>
+      <replace>$produitrep</replace>
+      <replace>$prod</replace>
+      <replace>&lt;li</replace>
+      <replace>&lt;?li</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\wamp64\www\projet en cours\Assets\style</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/BACK-END" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Entites/Client.php" />
+        <option value="$PROJECT_DIR$/Entites/Rayon.php" />
+        <option value="$PROJECT_DIR$/Entites/Utilisateur.php" />
+        <option value="$PROJECT_DIR$/Rayons/AjouterRayon.php" />
+        <option value="$PROJECT_DIR$/Rayons/modifierRayon.php" />
+        <option value="$PROJECT_DIR$/Utilisateur/SupprimerUtilisateur.php" />
+        <option value="$PROJECT_DIR$/Utilisateur/AjouterUtilisateur.php" />
+        <option value="$PROJECT_DIR$/categories/AjouterCategorie.php" />
+        <option value="$PROJECT_DIR$/categories/ModifierCategorie.php" />
+        <option value="$PROJECT_DIR$/Rayons/SupprimerRayon.php" />
+        <option value="$PROJECT_DIR$/categories/SupprimerCategorie.php" />
+        <option value="$PROJECT_DIR$/Entites/Produit.php" />
+        <option value="$PROJECT_DIR$/Produit/SupprimerProduit.php" />
+        <option value="$PROJECT_DIR$/Produit/AjoutProduit.php" />
+        <option value="$PROJECT_DIR$/Produit/ModifierProduit.php" />
+        <option value="$PROJECT_DIR$/Assets/style/jquerry.js.css" />
+        <option value="$PROJECT_DIR$/Assets/style/jquerry.js" />
+        <option value="$PROJECT_DIR$/Utilisateur/ModifierUtilisateur.php" />
+        <option value="$PROJECT_DIR$/Securite/logout.php" />
+        <option value="$PROJECT_DIR$/Securite/autorisation.php" />
+        <option value="$PROJECT_DIR$/Rayons/index.php" />
+        <option value="$PROJECT_DIR$/categories/AffichageCategorie.php" />
+        <option value="$PROJECT_DIR$/Produit/AffichageProduit.php" />
+        <option value="$PROJECT_DIR$/Repositoire/UtilisateurRepository.php" />
+        <option value="$PROJECT_DIR$/Commons/header.php" />
+        <option value="$PROJECT_DIR$/Utilisateur/Affichage.php" />
+        <option value="$PROJECT_DIR$/Securite/Page_connexion.php" />
+        <option value="$PROJECT_DIR$/Securite/isAdmin.php" />
+        <option value="$PROJECT_DIR$/Commons/menu.php" />
+        <option value="$PROJECT_DIR$/FRONT-END/common/front_header.php" />
+        <option value="$PROJECT_DIR$/BACK-END/Rayons/AjouterRayon.php" />
+        <option value="$PROJECT_DIR$/BACK-END/categories/AffichageCategorie.php" />
+        <option value="$PROJECT_DIR$/BACK-END/Produit/AffichageProduit.php" />
+        <option value="$PROJECT_DIR$/BACK-END/Utilisateur/Affichage.php" />
+        <option value="$PROJECT_DIR$/FRONT-END/index.php" />
+        <option value="$PROJECT_DIR$/FRONT-END/commons/header_front.php" />
+        <option value="$PROJECT_DIR$/Assets/js/java-script.js" />
+        <option value="$PROJECT_DIR$/commons/header_front.php" />
+        <option value="$PROJECT_DIR$/Assets/style/style.css" />
+        <option value="$PROJECT_DIR$/BACK-END/Rayons/index.php" />
+        <option value="$PROJECT_DIR$/Repositoire/RayonRepository.php" />
+        <option value="$PROJECT_DIR$/BD config/BD_config.php" />
+        <option value="$PROJECT_DIR$/commons/css.html" />
+        <option value="$PROJECT_DIR$/commons/js.html" />
+        <option value="$PROJECT_DIR$/Repositoire/CategorieRepository.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Repositoire/ProduitRepository.php" />
+        <option value="$PROJECT_DIR$/commons/footer.html" />
+        <option value="$PROJECT_DIR$/connexion.php" />
+        <option value="$PROJECT_DIR$/produitByRayon.php" />
+        <option value="$PROJECT_DIR$/yourCart.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="816" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ecommercefranco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommercefranco" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ecommercefranco\Assets\js" />
+      <recent name="C:\laragon\www\ecommercefranco\Assets\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\projet en cours" />
+      <recent name="C:\wamp64\www\projet en cours\Repositoire" />
+      <recent name="C:\wamp64\www\projet en cours\Rayons" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9af9e733-b7b8-43f1-9a7d-794eb25647dc" name="Default" comment="" />
+      <created>1579357304368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579357304368</updated>
+      <workItem from="1579357305712" duration="7366000" />
+      <workItem from="1579446759654" duration="1571000" />
+      <workItem from="1579615307009" duration="4570000" />
+      <workItem from="1579761451932" duration="866000" />
+      <workItem from="1579953298462" duration="15675000" />
+      <workItem from="1580041280273" duration="17557000" />
+      <workItem from="1580109558709" duration="143000" />
+      <workItem from="1580110963700" duration="2791000" />
+      <workItem from="1580292558789" duration="122000" />
+      <workItem from="1580558117942" duration="14190000" />
+      <workItem from="1580641005524" duration="9875000" />
+      <workItem from="1580725988854" duration="1677000" />
+      <workItem from="1581163197931" duration="11369000" />
+      <workItem from="1581250848244" duration="15958000" />
+      <workItem from="1581333527602" duration="4286000" />
+      <workItem from="1581451641309" duration="617000" />
+      <workItem from="1581773729821" duration="9538000" />
+      <workItem from="1581859329206" duration="17753000" />
+      <workItem from="1581937132369" duration="3939000" />
+      <workItem from="1582046545772" duration="2439000" />
+      <workItem from="1582096378084" duration="1224000" />
+      <workItem from="1582378548880" duration="14025000" />
+      <workItem from="1582458719343" duration="14230000" />
+      <workItem from="1582628772140" duration="619000" />
+      <workItem from="1582986691051" duration="4277000" />
+      <workItem from="1583192019897" duration="4476000" />
+      <workItem from="1583219675716" duration="1191000" />
+      <workItem from="1583237615877" duration="655000" />
+      <workItem from="1583239571683" duration="1987000" />
+      <workItem from="1583365084235" duration="5903000" />
+      <workItem from="1583607931722" duration="18410000" />
+      <workItem from="1583850986767" duration="44000" />
+      <workItem from="1583851103761" duration="215000" />
+      <workItem from="1583851356136" duration="1544000" />
+      <workItem from="1584133586031" duration="11896000" />
+      <workItem from="1584190058184" duration="1812000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="224810000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3298292" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3292683" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16207951" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.0" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1651671" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3292683" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3298292" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="14" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Rayons/SupprimerRayon.php" />
+    <entry file="file://$PROJECT_DIR$/categories/SupprimerCategorie.php" />
+    <entry file="file://$PROJECT_DIR$/Entites/Produit.php" />
+    <entry file="file://$PROJECT_DIR$/Produit/SupprimerProduit.php" />
+    <entry file="file://$PROJECT_DIR$/Assets/style/jquerry.js" />
+    <entry file="file://$PROJECT_DIR$/Produit/AjoutProduit.php" />
+    <entry file="file://$PROJECT_DIR$/Rayons/AjouterRayon.php" />
+    <entry file="file://$PROJECT_DIR$/Utilisateur/ModifierUtilisateur.php" />
+    <entry file="file://$PROJECT_DIR$/Entites/Utilisateur.php" />
+    <entry file="file://$PROJECT_DIR$/Rayons/index.php" />
+    <entry file="file://$PROJECT_DIR$/Produit/ModifierProduit.php" />
+    <entry file="file://$PROJECT_DIR$/Produit/AffichageProduit.php" />
+    <entry file="file://$PROJECT_DIR$/Repositoire/UtilisateurRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/header.php" />
+    <entry file="file://$PROJECT_DIR$/Securite/logout.php" />
+    <entry file="file://$PROJECT_DIR$/categories/AffichageCategorie.php" />
+    <entry file="file://$PROJECT_DIR$/Securite/autorisation.php" />
+    <entry file="file://$PROJECT_DIR$/Utilisateur/Affichage.php" />
+    <entry file="file://$PROJECT_DIR$/Utilisateur/AjouterUtilisateur.php" />
+    <entry file="file://$PROJECT_DIR$/Securite/Page_connexion.php" />
+    <entry file="file://$PROJECT_DIR$/Securite/isAdmin.php" />
+    <entry file="file://$PROJECT_DIR$/Commons/menu.php" />
+    <entry file="file://$PROJECT_DIR$/BACK-END/Securite/Page_connexion.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BACK-END/Commons/menu.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BACK-END/Securite/isAdmin.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRONT-END/common/front_header.php" />
+    <entry file="file://$PROJECT_DIR$/BACK-END/categories/AffichageCategorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="168" column="6" lean-forward="true" selection-start-line="168" selection-start-column="6" selection-end-line="168" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BACK-END/Produit/AffichageProduit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BACK-END/Utilisateur/Affichage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="176" column="19" selection-start-line="176" selection-start-column="19" selection-end-line="176" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BACK-END/Rayons/AjouterRayon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/js/java-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/js/bootstrap.bundle.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-750" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/style/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="5" column="71667" selection-start-line="5" selection-start-column="71662" selection-end-line="5" selection-end-column="71667" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/photos/logo innova.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/photos/Logo innova complet.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BACK-END/Entites/Rayon.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BD config/BD_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/header_front.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="3" column="83" selection-start-line="3" selection-start-column="83" selection-end-line="3" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BACK-END/Rayons/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-550">
+          <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repositoire/RayonRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repositoire/CategorieRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#1032#1042#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repositoire/ProduitRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="61" column="57" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produitByRayon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="111" column="52" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="58" column="7" lean-forward="true" selection-start-line="8" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yourCart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
