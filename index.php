@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'BD config/BD_config.php';
 require 'Repositoire/RayonRepository.php';
 

@@ -1,0 +1,7 @@
+<?php
+
+$villes = [
+    'Douala',
+    'Yaoundé'
+]
+?>

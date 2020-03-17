@@ -1,4 +1,27 @@
-<?php ?>
+<?php
+session_start();
+require 'BD config/BD_config.php';
+require 'Repositoire/ClientRepository.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $username = $_POST['login'];
+    $password = $_POST['password'];
+
+    $bdConfig = new BD_config();
+    $client_repository = new ClientRepository($bdConfig);
+    $client = $client_repository->verifier($username, $password);
+
+    if (!empty($client)){
+        session_start();
+        $_SESSION['client'] = $client;
+        header('Location: index.php');
+    }else{
+        $msg = true;
+    }
+}
+
+?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -20,17 +43,23 @@
                     </h3>
                 </div>
                 <div class="card-body">
-                    <form action="">
+                    <?php if (isset($msg)){ ?>
+                    <div class="text-center alert alert-danger">
+                       <i class="fa fa-close"></i> Nom d'utilisateur ou mot de passe incorrect
+                    </div>
+                    <?php } ?>
+                    <form action="" method="post">
                         <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" placeholder="Nom d'utilisateur">
+                            <input required type="text" name="login" class="form-control form-control-lg" placeholder="Nom d'utilisateur">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control form-control-lg" placeholder="Mot de passe">
+                            <input required type="password" name="password" class="form-control form-control-lg" placeholder="Mot de passe">
                         </div>
                         <div>
                             <button class="btn btn-primary">
                                 <i class="fa fa-sign-in"></i> Se connecter
                             </button>
+                            <a href="inscription.php">Vous n'avez pas de compte?</a>
                         </div>
                     </form>
                 </div>
