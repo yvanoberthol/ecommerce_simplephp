@@ -1,2 +1,9 @@
 <script src="Assets/js/jquery.min.js"></script>
 <script src="Assets/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function () {
+   $.get('nbrePanier.php',function (data) {
+       $('#nbrePanier').html('<span>'+data+'</span>');
+   });
+});
+</script>

@@ -5,9 +5,17 @@ require 'BD config/BD_config.php';
 require 'Repositoire/LignePanierRepository.php';
 
 $bdConfig = new BD_config();
+$msgCommande = false;
 $lignepanier_repository = new LignePanierRepository($bdConfig);
-
 $ligne_paniers = $lignepanier_repository->getALL($_SESSION['client']['id_client']);
+
+if(count($ligne_paniers) <= 0){
+    if (isset($_GET['msg_cmde']) && $_GET['msg_cmde']){
+        $msgCommande = true;
+    }
+}else{
+    $msgCommande = false;
+}
 ?>
 <!doctype html>
 <html lang="fr">
@@ -26,16 +34,27 @@ $ligne_paniers = $lignepanier_repository->getALL($_SESSION['client']['id_client'
             Votre panier
         </div>
     </div>
+    <?php if ($msgCommande){ ?>
+    <div class="row mt-4 mb-2">
+        <div class="col-md-12 alert alert-success p-5 h5 font-weight-bold text-center">
+          <i class="fa fa-check-circle"></i>  Votre commande a été placée avec succès. <br>
+            <a href="index.php">Rechercher d'autres produits</a>
+        </div>
+    </div>
+    <?php } ?>
     <div class="row mt-2">
-        <div class="col-md-6 offset-md-3">
-            <div>
-                <a href="commander.php" class="btn btn-success pull-right">
-                    Commander &nbsp;<i class="fa fa-arrow-right"></i>
-                </a>
-            </div>
+        <div class="col-md-8 offset-md-2">
             <?php if (count($ligne_paniers) > 0){ ?>
-            <table class="table table-striped">
+            <div class="row mt-2 pb-2">
+                <div class="col-md-12">
+                    <a href="commander.php" class="btn btn-success pull-right">
+                        Commander &nbsp;<i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <table class="table">
                 <tr class="font-weight-bold">
+                    <td></td>
                     <td>Produit</td>
                     <td>Prix unitaire</td>
                     <td>Quantité</td>
@@ -46,10 +65,34 @@ $ligne_paniers = $lignepanier_repository->getALL($_SESSION['client']['id_client'
                 $montant_total = 0;
                 foreach ($ligne_paniers as $ligne_panier){
                 ?>
-                <tr>
+                <tr >
+                    <td>
+                        <img class="img-fluid shelf-book"
+                             src="BACK-END/Produit/Images/<?= $ligne_panier['photo_produit']?>"
+                             style="width:50px;height: 50px">
+                    </td>
                     <td class="text-uppercase"><?= $ligne_panier['nom']?></td>
                     <td><?= $ligne_panier['prix_vente']?></td>
-                    <td><?= $ligne_panier['quantite_com']?></td>
+                    <td>
+                        <form action="updateQuantite.php" method="post" class="form-inline">
+                            <table class="table-borderless">
+                                <tr>
+                                    <td>
+                                        <input type="hidden" name="id" value="<?= $ligne_panier['id_ligne_panier']?>">
+                                        <input type="hidden" name="prix" value="<?= $ligne_panier['prix_vente']?>">
+                                        <input id="<?= $ligne_panier['id_ligne_panier']?>" type="number" class="form-control input"
+                                               style="width: 80px" name="quantite" value="<?= $ligne_panier['quantite_com']?>">
+                                    </td>
+                                    <td style="display: none;" class="lp" id="lp<?= $ligne_panier['id_ligne_panier']?>">
+                                        <button class="btn btn-primary">
+                                            <i class="fa fa-check"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+
+                    </td>
                     <td><?= $ligne_panier['sous_total']?></td>
                     <td>
                         <a class="btn btn-danger"
@@ -64,12 +107,16 @@ $ligne_paniers = $lignepanier_repository->getALL($_SESSION['client']['id_client'
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>Montant Total</td>
-                    <td class="font-weight-bold"><?= $montant_total?> FCFA</td>
-                    <td></td>
+                    <td colspan="2" class="text-right">Montant total(FCFA):</td>
+                    <td class="font-weight-bold"><?= $montant_total?></td>
+                    <td class="text-right">
+                        <a class="text-center btn btn-outline-danger font-weight-bold" href="emptyCart.php?id_panier=<?= $ligne_paniers[0]['panier_id']?>">
+                          <i class="fa fa-trash"></i>  Vider le panier
+                        </a>
+                    </td>
                 </tr>
             </table>
-            <?php }else{ ?>
+            <?php }else if (!$msgCommande && count($ligne_paniers) <= 0){ ?>
             <div class="alert alert-info text-center mt-3">
                <i class="fa fa-info-circle"></i>
                 Aucun produit n'a encore été ajouté au panier
@@ -80,5 +127,16 @@ $ligne_paniers = $lignepanier_repository->getALL($_SESSION['client']['id_client'
     <?php require 'commons/footer.html'?>
 </div>
 <?php require 'commons/js.html'?>
+<script>
+    $(document).ready(function () {
+
+        let input = $('.input');
+
+        input.change(function () {
+           $('.lp').css('display','none');
+           $('#lp'+$(this).attr('id')).css('display','block');
+       });
+    });
+</script>
 </body>
 </html>

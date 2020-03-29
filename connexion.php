@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <div class="container-fluid">
     <?php include 'commons/header_front.php' ?>
     <div class="row p-5">
-        <div class="col-md-6 offset-3">
+        <div class="col-md-6 offset-md-3">
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title text-uppercase">

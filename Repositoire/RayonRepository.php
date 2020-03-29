@@ -21,7 +21,7 @@ private $bdd;
     }
     Public function delete($id){
 
-        $req = $this->bdd->bd->prepare(' DELETE FROM rayon WHERE id_rayon = ?');
+        $req = $this->bdd->bd->prepare('DELETE FROM rayon WHERE id_rayon = ?');
         $req->execute(array($id));
 
     }
@@ -35,10 +35,6 @@ private $bdd;
 
         $q = $this->bdd->bd->query("SELECT * FROM rayon");
         return $q->fetchAll(PDO::FETCH_ASSOC);
-
-    }
-
-    public function getONE($id){
 
     }
     public function getbyname($name){

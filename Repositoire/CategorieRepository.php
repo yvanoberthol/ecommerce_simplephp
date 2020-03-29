@@ -42,9 +42,6 @@ class CategorieRepository
         return $q->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function getONE($id){
-
-    }
     public function getbyname($name){
         $req = $this->bdd->bd->prepare("SELECT id_Categorie,C.nom as nomC,R.nom as nomR FROM categorie C,rayon R WHERE C.rayon_id=R.id_rayon and  C.nom like ?");
         $req->execute(array($name.'%'));

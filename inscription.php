@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <div class="container-fluid">
     <?php include 'commons/header_front.php' ?>
     <div class="row p-5">
-        <div class="col-md-6 offset-3">
+        <div class="col-md-6 offset-md-3">
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title text-uppercase">
@@ -46,22 +46,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <?php } ?>
                     <form action="" method="post">
                         <div class="form-group">
-                            <input type="text" name="nom" class="form-control form-control-lg" placeholder="nom">
+                            <input type="text" name="nom" class="form-control form-control-lg" placeholder="Nom">
                         </div>
                         <div class="form-group">
-                            <input required type="text" name="prenom" class="form-control form-control-lg" placeholder="prénom">
+                            <input required type="text" name="prenom" class="form-control form-control-lg" placeholder="Prénom">
                         </div>
                         <div class="form-group">
-                            <input required type="email" name="email" class="form-control form-control-lg" placeholder="email">
+                            <input required type="email" name="email" class="form-control form-control-lg" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input required type="tel" name="telephone" class="form-control form-control-lg" placeholder="téléphone">
+                            <input required type="tel" name="telephone" class="form-control form-control-lg" placeholder="Téléphone">
                         </div>
                         <div class="form-group">
-                            <input required type="text" name="login" class="form-control form-control-lg" placeholder="login">
+                            <input required type="text" name="login" class="form-control form-control-lg" placeholder="Nom d'utilisateur">
                         </div>
                         <div class="form-group">
-                            <input required type="password" name="password" class="form-control form-control-lg" placeholder="password">
+                            <input required type="password" name="password" class="form-control form-control-lg" placeholder="Mot de passe">
                         </div>
                         <div>
                             <button type="submit" class="btn btn-primary">

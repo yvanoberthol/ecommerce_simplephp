@@ -2,9 +2,11 @@
 session_start();
 require 'BD config/BD_config.php';
 require 'Repositoire/RayonRepository.php';
+require 'Repositoire/CategorieRepository.php';
 
 $bdConfig = new BD_config();
 $rayon_repository = new RayonRepository($bdConfig);
+$categorie_repository = new CategorieRepository($bdConfig);
 $rayons = $rayon_repository->getALL();
 ?>
 <!doctype html>
@@ -33,20 +35,39 @@ $rayons = $rayon_repository->getALL();
             </div>
         </div>
     </div>
-    <div class="row bg-info">
+    <div class="row bg-info" id="rayons">
         <div class="col-md-12 text-center h3 p-2 text-uppercase">
             Visitez nos rayons
         </div>
     </div>
     <?php foreach ($rayons as $rayon) { ?>
     <div class="row mt-2">
-        <div class="col-md-4 offset-md-4">
+        <div class="col-md-8 offset-md-2">
             <div class="card">
                 <div class="card-header">
-                    <div class="card-title text-center font-weight-bold h5">
-                        <a href="produitByRayon.php?id_rayon=<?=$rayon['id_rayon']?>">
-                            <?= $rayon['nom']?>
-                        </a>
+                    <div class="card-title">
+                        <div class="row">
+                            <div class="col-md-4 font-weight-bold h6 text-uppercase">
+                                <div>
+                                    <a href="produitByRayon.php?id_rayon=<?=$rayon['id_rayon']?>">
+                                        <?= $rayon['nom']?>
+                                    </a>
+                                </div>
+                                 <div class="barre" style="width: 100%; border: #0c5460 solid 2px">
+                                 </div>
+                            </div>
+                            <div class="col-md-8">
+                                <ul class="list-group">
+                                    <?php
+                                        $categories = $categorie_repository->getALLByRayon($rayon['id_rayon']);
+                                        foreach ($categories as $categorie) {
+                                            echo '<li class="list-group-item"><a href="produitByRayon.php?id_rayon='.$rayon['id_rayon'].'&id_categorie='.$categorie['id_Categorie'].'" class="list-group-item-action text-capitalize">'.$categorie['nomC'].'</a></li>';
+                                        }
+                                    ?>
+                                </ul>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

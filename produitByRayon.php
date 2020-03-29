@@ -9,6 +9,7 @@ require 'Repositoire/PanierRepository.php';
 if (isset($_GET['id_rayon'])) {
     if (!empty($_GET['id_rayon'])) {
         $bdConfig = new BD_config();
+        $categorie_id = 0;
         $categorie_repository = new CategorieRepository($bdConfig);
         $categories = $categorie_repository->getALLByRayon($_GET['id_rayon']);
 
@@ -17,7 +18,18 @@ if (isset($_GET['id_rayon'])) {
         }
 
         $produit_repository = new ProduitRepository($bdConfig);
-        $produits = $produit_repository->getALLByCategorie($categories[0]['id_Categorie']);
+
+        if (isset($_GET['id_categorie'])){
+            if (!empty($_GET['id_categorie'])){
+                $categorie_id = $_GET['id_categorie'];
+                $produits = $produit_repository->getALLByCategorie($_GET['id_categorie']);
+            }
+        }else{
+            $categorie_id = $categories[0]['id_Categorie'];
+            $produits = $produit_repository->getALLByCategorie($categories[0]['id_Categorie']);
+        }
+
+
     }
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -26,12 +38,13 @@ if (isset($_GET['id_rayon'])) {
         $panier = $panier_repository->getByClient($_SESSION['client']['id_client']);
 
         $lignepanier_repository = new LignePanierRepository($bdConfig);
-        $ligne_panierByProduit = $lignepanier_repository->getONEByProduit($_POST['produit_id']);
+        $ligne_panierByProduit = $lignepanier_repository->getONEByProduit($_POST['produit_id'],$_SESSION['client']['id_client']);
+        print_r($ligne_panierByProduit);
         $ligne_panier = new Ligne_panier();
 
         if (empty($ligne_panierByProduit)){
             if (empty($panier)){
-                $panierToCreate['utilisateur_id'] = $_SESSION['client']['id_client'];
+                $panierToCreate['client_id'] = $_SESSION['client']['id_client'];
                 $id_created = $panier_repository->create($panierToCreate);
                 $ligne_panier->setPanierId($id_created);
             }else{
@@ -64,6 +77,13 @@ if (isset($_GET['id_rayon'])) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <?php require 'commons/css.html'?>
     <title>INNOVA</title>
+    <style>
+        .bounce:hover{
+            box-shadow: 4px 4px black;
+            transition: linear;
+            transition-duration: .3s;
+        }
+    </style>
 </head>
 <body>
 <div class="container-fluid">
@@ -92,8 +112,8 @@ if (isset($_GET['id_rayon'])) {
             <h3 class="h3 text-center">Catégorie(s)</h3>
             <div class="list-group list-group-flush text-center">
                 <?php foreach ($categories as $categorie){?>
-                <a href="#" class="text-uppercase list-group-item list-group-item-primary
-                list-group-item-action h6 <?php if ($categorie == $categories[0]) echo 'active'?>">
+                <a href="?id_rayon=<?=$_GET['id_rayon']?>&id_categorie=<?=$categorie['id_Categorie']?>" class="text-uppercase list-group-item list-group-item-primary
+                list-group-item-action h6 <?php if ($categorie['id_Categorie'] == $categorie_id) echo 'active'?>">
                     <?= $categorie['nomC']?>
                 </a>
                 <?php } ?>
@@ -101,11 +121,11 @@ if (isset($_GET['id_rayon'])) {
         </div>
         <div class="col-md-9">
             <div class="row">
-                <div class="col-md-3">
-                    <?php foreach ($produits as $produit){ ?>
-                    <div class="card">
+                <?php foreach ($produits as $produit){ ?>
+                <div class="col-md-3 mb-2 col-sm-6">
+                    <div class="card bounce">
                         <div class="card-header color-meduim-titre">
-                            <div class="card-title h4 text-center text-uppercase">
+                            <div class="card-title h5 text-center text-uppercase">
                                 <?= $produit['nom']?>
                             </div>
                         </div>
@@ -117,10 +137,10 @@ if (isset($_GET['id_rayon'])) {
                         <div class="card-footer text-center bg-info">
                             <div class="row">
                                 <div class="col-md-12 text-center">
-                                    <span class="h4 text-white">
+                                    <span class="h5 text-white">
                                         <?= $produit['prix_vente']?> FCFA
                                     </span>
-                                    <button data-target="#p<?= $produit['id_Produit'] ?>" data-toggle="modal" type="button" class="btn btn-success h4 pull-right">
+                                    <button data-target="#p<?= $produit['id_Produit'] ?>" data-toggle="modal" type="button" class="btn btn-success h5 pull-right">
                                         <i class="fa fa-arrow-circle-down"></i>
                                     </button>
 
@@ -180,14 +200,11 @@ if (isset($_GET['id_rayon'])) {
                                         </div>
                                     </div>
                                 </div>
-                                <!--<div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>-->
                             </div>
                         </div>
                     </div>
-                    <?php } ?>
                 </div>
+                <?php } ?>
             </div>
         </div>
     </div>

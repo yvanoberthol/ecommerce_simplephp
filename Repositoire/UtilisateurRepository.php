@@ -50,11 +50,6 @@ class UtilisateurRepository
 
     }
 
-    public function getONE($id)
-    {
-
-    }
-
     public function getbyname($name)
     {
         $req = $this->bdd->bd->prepare("SELECT * FROM utilisateur WHERE  username like ?");

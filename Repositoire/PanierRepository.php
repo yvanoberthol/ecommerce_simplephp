@@ -21,9 +21,9 @@ class PanierRepository
 
     public function create($panier){
 
-        $req = $this->bdd->bd->prepare('INSERT INTO panier (client_id) VALUES (?)');
+        $req = $this->bdd->bd->prepare('INSERT INTO panier (client_id, soumis) VALUES (?,false)');
         $req->execute([
-                $panier['utilisateur_id']
+                $panier['client_id']
             ]
         );
 
@@ -35,16 +35,17 @@ class PanierRepository
         $req->execute(array($id));
 
     }
-    public function update($panier){
-        $req = $this->bdd->bd->prepare('UPDATE panier SET client_id = ? where id_panier = ?');
+
+    public function submitPanier($id_panier){
+        $req = $this->bdd->bd->prepare('UPDATE panier SET soumis = true where id_panier = ?');
         $req->execute(array(
-                $panier['utilisateur_id']
+                $id_panier
             )
         );
     }
 
     public function getByClient($idClient){
-        $req = $this->bdd->bd->query("SELECT id_panier,client_id FROM panier p WHERE p.client_id=$idClient");
+        $req = $this->bdd->bd->query("SELECT id_panier,client_id FROM panier p WHERE p.soumis = false and p.client_id=$idClient");
         return $req->fetch();
     }
 }

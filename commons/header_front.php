@@ -20,15 +20,42 @@
             <li class="nav-item">
                 <a class="nav-link" href="yourCart.php">
                     <i class="fa fa-shopping-cart"></i> Panier
+                    <span class="badge badge-success">
+                        <span id="nbrePanier"></span>
+                    </span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fa fa-user-circle"></i>   <?= $_SESSION['client']['nom'].' '.$_SESSION['client']['prenom']?>
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user-circle"></i> <?= $_SESSION['client']['nom'].' '.$_SESSION['client']['prenom']?>
                 </a>
-            </li>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="modifierCompte.php">
+                       <i class="fa fa-table"></i> Mon compte
+                    </a>
+                    <a class="dropdown-item" href="changePassword.php">
+                        <i class="fa fa-key"></i> Changer mes identifiants
+                    </a>
+                    <a class="dropdown-item" href="logout.php">
+                       <i class="fa fa-sign-out"></i> Déconnexion
+                    </a>
+                </div>
+            </div>
         </ul>
-        <?php } ?>
+        <?php } else { ?>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="inscription.php">
+                        <i class="fa fa-user-circle-o"></i> S'inscrire
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="connexion.php">
+                        <i class="fa fa-sign-in"></i> Se connecter
+                    </a>
+                </li>
+            </ul>
+        <?php }?>
     </div>
 </nav>
 
